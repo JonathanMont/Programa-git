@@ -1,0 +1,923 @@
+@ -0,0 +1,922 @@
+body {
+   font-family: "Fira Sans", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+   margin: 0;
+   color: #454547;
+   line-height: 1.5;
+}
+
+header {
+   background-color: #ffffff;
+   color: #454547;
+   padding: 30px 40px;
+   font-size: 16px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav img {
+   max-width: 311px;
+   height: auto;
+   position: relative;
+   top: 2px;
+   left: -2px;
+
+}
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+
+}
+
+nav li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+nav a {
+   color: #454547;
+   text-decoration: none;
+   padding: 5px;
+}
+
+
+nav a:hover {
+   color: #F50057;
+   transition: all 100ms ease-in-out;
+}
+
+
+footer {
+   background-color: #8a8b8d;
+   color: #ffffff;
+   padding: 60px 10px 5px 10px;
+   display: block;
+
+}
+
+footer ul {
+
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.hero {
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.595) 100%, transparent 60%), url("Img SIE/pasillo\ biblioteca\ uniandes.jpg");
+   color: #fff;
+   padding: 110px 60px;
+   text-align: left;
+   background-size: cover;
+   background-position: 60% 60%;
+
+}
+
+.hero h1 {
+   font-size: 70px;
+   margin: 30px 0;
+}
+
+.hero h2 {
+   font-size: 30px;
+   padding: 16px 0;
+}
+
+.hero h3 {
+   font-size: 20px;
+   line-height: 2;
+   max-width: 800px;
+}
+
+.nuestros-aliados {
+   text-align: center;
+   padding: 30px 0;
+   margin-top: 60px;
+}
+
+.aliados {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin: 60px 0 0 0;
+}
+
+.info-aliado {
+   width: 230px;
+   height: auto;
+   margin: 20px 30px;
+   border-radius: 20px;
+   padding: 20px 0 0 0;
+}
+
+.info-aliado p {
+   margin: 0;
+   padding: 10px;
+}
+
+.nuestros-aliados img {
+   padding: 10px;
+   width: 180px;
+   height: 120px;
+   object-fit: contain;
+   box-sizing: border-box;
+}
+
+.nuestros-aliados a {
+   color: #454547;
+   text-decoration: none;
+   padding: 5px;
+}
+
+.nuestros-aliados a:hover {
+   color: #F50057;
+   transition: all 100ms ease-in-out;
+}
+
+#libreria-de-la-u {
+   background-color: #EF8555;
+   border-radius: 20px;
+   height: 80px;
+   margin: 20px auto;
+}
+
+.tipos-de-consultas {
+   text-align: center;
+   margin: 60px 0;
+   padding-bottom: 50px;
+}
+
+.manual-de-usuario {
+   text-align: center;
+   padding: 40px 0;
+   background-color: #6184c6;
+   color: #fff;
+   margin-bottom: 60px;
+
+}
+
+.manual-de-usuario h2 {
+   margin-bottom: 40px;
+}
+
+.info-manual {
+   display: flex;
+   justify-content: space-around;
+   width: 60%;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+   color: #454547;
+   border-radius: 20px;
+}
+
+.container-manual {
+   width: 50%;
+   align-content: center;
+   padding: 20px;
+
+}
+
+.container-manual p {
+   text-align: justify;
+   padding: 20px;
+}
+
+.container-manual.seneca {
+   width: 60%;
+}
+
+.container-manual img {
+   width: 100%;
+   height: 90%;
+   object-fit: cover;
+   border-radius: 20px;
+}
+
+.container-manual.descripcion {
+   width: 40%;
+}
+
+.generalidades {
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 30px;
+}
+
+.contacto img {
+   width: 300px;
+   height: auto;
+}
+
+.links-footer {
+   line-height: 2;
+}
+
+.links-footer-redes {
+   line-height: 2.5;
+}
+
+.miembros {
+   display: flex;
+   justify-content: center;
+   border-top: 1px solid #ffffff;
+   border-bottom: 1px solid #ffffff;
+   padding: 60px 0;
+   align-items: center;
+   font-weight: 600;
+}
+
+.miembros img {
+   width: 200px;
+   height: 90px;
+   margin: 0 auto;
+}
+
+.somos-miembros {
+   margin: 0 20px;
+}
+
+.copyright {
+   text-align: left;
+   margin: 5px;
+   font-size: smaller;
+}
+
+/*CARRUSEL DE IMAGENES*/
+
+.carousel-wrapper {
+   height: 450px;
+   position: relative;
+   width: 800px;
+   margin: 60px auto 0 auto;
+}
+
+.carousel-item {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 110px 80px;
+   opacity: 0;
+   transition: all 0.4s ease-in-out;
+   color: #ffffff;
+}
+
+.carousel-item p {
+   border-radius: 20px;
+   padding: 20px;
+   text-align: justify;
+   text-justify: inter-character;
+}
+
+.arrow {
+   border: solid #fbd852;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 12px;
+}
+
+.arrow-prev {
+   left: -30px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+   right: -30px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+   color: rgba(255, 255, 255, 0.708);
+}
+
+@media (max-width: 480px) {
+
+   .arrow,
+   .light .arrow {
+      background-size: 10px;
+      background-position: 10px 50%;
+   }
+}
+
+[id^="item"] {
+   display: none;
+}
+
+.item-1 {
+   z-index: 2;
+   opacity: 1;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.638) 100%, transparent 50%), url("Img SIE/oficina\ ediciones\ uniandes.jpg");
+   background-size: cover;
+
+}
+
+.item-2 {
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.657) 100%, transparent 50%), url("Img SIE/tienda\ ediciones\ uniandes.jpg");
+   background-size: cover;
+   background-position: 50% 40%;
+}
+
+.item-3 {
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.735) 100%, transparent 50%), url("Img SIE/computador\ dashboard\ azul.jpg");
+   background-size: cover;
+   background-position: 50% 30%;
+}
+
+.item-4 {
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.657) 100%, transparent 50%), url("Img SIE/contando\ billetes.jpg");
+   background-size: cover;
+}
+
+*:target~.item-1 {
+   opacity: 0;
+}
+
+#item-1:target~.item-1 {
+   opacity: 1;
+}
+
+#item-2:target~.item-2,
+#item-3:target~.item-3,
+#item-4:target~.item-4 {
+   z-index: 3;
+   opacity: 1;
+}
+
+/* EN CONSTRUCCION */
+.construyendo {
+   text-align: center;
+   padding: 60px 0;
+   margin: 30px 0;
+   background-color: #6184c6;
+   color: #ffffff;
+}
+
+.construyendo h1 {
+   font-size: 50px;
+   margin: 0 10px;
+}
+
+.construyendo h2 {
+   width: 650px;
+   font-size: 30px;
+   font-weight: 300;
+   margin: 30px auto;
+}
+
+.construyendo img {
+   margin: 15px;
+   max-width: 500px;
+   width: 100%;
+   height: auto;
+   box-sizing: border-box;
+}
+
+/* PAGINA DE LOGIN*/
+
+.heroHeader {
+   text-align: center;
+   padding: 60px;
+   margin-bottom: 60px;
+   background: linear-gradient(to bottom, rgba(41, 40, 40, 0.745) 16%, transparent 70%), url("Img SIE/biblioteca\ stand\ de\ libros\ con\ escalera.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: auto;
+   color: #ffffff;
+}
+
+.heroHeader h1 {
+   font-size: 50px;
+   margin: 0;
+}
+
+.container {
+   width: 40%;
+   min-width: 400px;
+   height: auto;
+   margin: 50px auto;
+   background-color: #ffffff;
+   color: #454547;
+   border-radius: 21px;
+   text-align: left;
+}
+
+.container img {
+   width: 150px;
+   margin: 30px;
+   float: left;
+}
+
+.formulario {
+   padding: 120px 60px;
+}
+
+.formBox {
+   padding: 10px;
+   width: 100%;
+}
+
+.formBox input {
+   width: 85%;
+   border: none;
+   border-bottom: 1px solid #8a8b8d;
+   outline: none;
+   padding: 10px;
+   margin: 10px 0;
+}
+
+::placeholder {
+   color: #8a8b8dc0;
+   font-family: 'Fira Sans', sans-serif;
+}
+
+.disclaimer {
+   margin: 0;
+   background-color: #454547;
+   padding: 30px;
+   color: #ffffff;
+   border-radius: 0 0 21px 21px;
+}
+
+/*PAGINA INICIAL DE REPORTES*/
+
+.header-sie {
+   text-align: center;
+   padding: 60px 0;
+}
+
+.header-sie h1 {
+   font-size: 50px;
+   margin: 0;
+}
+
+.header-sie h2 {
+   font-size: 30px;
+}
+
+.header-sie h3 {
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.seleccion-reportes {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 60px 0;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.595) 100%, transparent 60%), url("Img SIE/biblioteca.jpg");
+   background-size: cover;
+   background-position: 50% 70%;
+   width: 100%;
+   height: auto;
+   margin-bottom: 60px;
+}
+
+.visualizar-reporte {
+   width: 230px;
+   height: auto;
+   background-color: #ffffff;
+   color: #454547;
+   padding: 30px 40px;
+   border-radius: 21px;
+   margin: 20px;
+}
+
+.imagen-asociada {
+   display: flex;
+   justify-content: center;
+}
+
+.visualizar-reporte img {
+   width: 200px;
+   height: 120px;
+}
+
+.texto-asociado {
+   margin-top: 30px;
+   height: 140px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.texto-asociado p {
+   margin: 5px 0;
+   text-align: justify;
+}
+
+/*BARRA DE BUSQUEDA*/
+
+.search-bar {
+   width: 100%;
+   height: auto;
+   margin: 0 auto;
+   padding-top: 30px;
+}
+
+input:focus,
+textarea:focus,
+option:focus {
+   outline: none;
+}
+
+.tb {
+   display: table;
+   width: 99%;
+}
+
+.td {
+   display: table-cell;
+   vertical-align: middle;
+   width: 81%;
+}
+
+.search-bar input,
+button {
+   color: #ffffff;
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 200;
+   padding: 0 20px;
+   margin: 0;
+   border: 0;
+   background-color: transparent;
+}
+
+#cover {
+   width: 100%;
+   padding: 0;
+   margin: auto 0;
+   background-color: #F50057;
+   border-radius: 20px;
+   box-shadow: 0 10px 30px #f5005693, 0 0 0 20px #e5e6e9cb;
+   transform: scale(0.45);
+}
+
+.search-bar form {
+   height: auto;
+}
+
+.search-bar input[type="text"] {
+   width: 94%;
+   font-size: 40px;
+   line-height: 1;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.search-bar input[type="text"]::placeholder {
+   color: #ff91c4;
+}
+
+#s-cover {
+   width: 1px;
+   padding-left: 3px;
+}
+
+.search-bar button {
+   position: relative;
+   display: block;
+   width: 84px;
+   height: 96px;
+   cursor: pointer;
+}
+
+#s-circle {
+   position: relative;
+   top: -11px;
+   left: -16px;
+   width: 36px;
+   height: 36px;
+   margin-top: 0;
+   border-width: 13px;
+   border: 13px solid #ffffff;
+   background-color: transparent;
+   border-radius: 50%;
+   transition: 0.5s ease all;
+}
+
+.search-bar button span {
+   position: absolute;
+   top: 64px;
+   left: 39px;
+   display: block;
+   width: 45px;
+   height: 13px;
+   background-color: transparent;
+   border-radius: 10px;
+   transform: rotateZ(52deg);
+   transition: 0.5s ease all;
+}
+
+.search-bar button span:before,
+button span:after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 45px;
+   height: 13px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   transform: rotateZ(0);
+   transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle {
+   top: -1px;
+   width: 67px;
+   height: 15px;
+   border-width: 0;
+   background-color: #ffffff;
+   border-radius: 20px;
+}
+
+#s-cover:hover span {
+   top: 50px;
+   left: 52px;
+   width: 25px;
+   margin-top: -9px;
+   transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before {
+   bottom: 11px;
+   transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after {
+   bottom: -11px;
+   transform: rotateZ(-52deg);
+}
+
+#s-cover:hover button span:before,
+#s-cover:hover button span:after {
+   right: -3px;
+   width: 40px;
+   background-color: #ffffff;
+}
+
+#filtro {
+   box-sizing: border-box;
+   padding: 5px;
+   border-radius: 5px;
+   border: none;
+   margin: 30px 20px;
+   background-color: #F50057;
+   color: #ff91c4;
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 28px;
+   width: 85%;
+   height: auto;
+   font-weight: 100;
+}
+
+#filtro option {
+   background-color: #F50057;
+   color: #ff91c4;
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 13px;
+   font-weight: 100;
+}
+
+/*LISTA DE BUSQUEDA*/
+
+
+.resultados-busqueda {
+   width: 80%;
+   margin: 0 auto;
+   padding: 30px 0 60px 0;
+}
+
+#search-results {
+   width: 100%;
+   padding: 20px;
+   margin: auto;
+   height: auto;
+   text-align: left;
+   line-height: 1.5;
+}
+
+#search-results tr {
+   background-color: #e5e6e9cb;
+}
+
+#search-results thead {
+   text-align: center;
+   font-size: 20px;
+}
+
+/* PARA QUE LA TABLA SE ESCONDA HASTA QUE SE HAGA SEARCH */
+/* #search-results {
+   display: none;
+} */
+
+/*BOTONES*/
+
+#btn-login,
+#btn-manual,
+#btn-reporte,
+#btn-descargar-editorial,
+#btn-regresar {
+   background-color: transparent;
+   color: #F9D407;
+   border: #F9D407 solid 2px;
+   padding: 15px 30px;
+   border-radius: 40px;
+}
+
+#btn-login:hover,
+#btn-manual:hover,
+#btn-reporte:hover,
+#btn-descargar-editorial:hover,
+#btn-regresar:hover {
+   transition: all 200ms ease-in-out;
+   opacity: 1;
+   background: #F9D407;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+}
+
+#btn-entrar {
+   background-color: #ffffff;
+   color: #6184c6;
+   border: 2px solid #6184c6;
+   padding: 15px 30px;
+   border-radius: 40px;
+   float: right;
+   margin: 20px 0;
+}
+
+#btn-entrar:hover {
+   background-color: #6184c6;
+   border: none;
+   color: #ffffff;
+   cursor: pointer;
+}
+
+#btn-descargar-editorial {
+   margin: 15px;
+   width: 200px;
+}
+
+#btn-regresar {
+   color: #F50057;
+   border: 2px solid #F50057;
+   margin: auto 0;
+}
+
+#btn-regresar:hover {
+   background-color: #F50057;
+}
+
+/*REPORTES INDIVIDUALES*/
+
+/*EDITORIAL*/
+
+.hero-reporte {
+   text-align: center;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.718) 100%, transparent 60%), url("Img SIE/editorial\ libro\ azul.jpg");
+   background-position: 50% 20%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 60px 0;
+   margin: auto 0;
+   color: #ffffff;
+   border: 3px solid #454547;
+}
+
+.hero-reporte h1 {
+   font-size: 50px;
+   margin: 0;
+   padding: 0;
+}
+
+.hero-reporte h2 {
+   font-size: 30px;
+   font-weight: 400;
+   margin: 20px auto;
+}
+
+.formulario-reporte {
+   width: 90%;
+   margin: 0 auto;
+   padding-top: 20px;
+}
+
+.informacion-general-libro,
+.especificaciones-libro {
+   width: 60%;
+   border-radius: 30px;
+   margin: 30px auto;
+   background-color: #ffffff;
+   padding: 30px;
+   box-shadow: 1px 2px 20px 0px #e5e6e9cb;
+}
+
+.reporte {
+   width: 100%;
+   display: flex;
+   margin: 5px 0;
+   box-sizing: border-box;
+}
+
+.reporte label {
+   width: 200px;
+   font-weight: 400;
+   padding: 20px 0;
+   margin: 5px;
+   text-align: right;
+   line-height: 1.5;
+}
+
+.reporte textarea {
+   height: 48px;
+   width: 70%;
+   padding: 15px 20px;
+   margin: 10px;
+   border: none;
+   color: #454547;
+   font-size: 16px;
+   font-family: "Fira Sans", sans-serif;
+   font-weight: 200;
+   text-align: justify;
+   line-height: 1.5;
+   outline: none;
+   resize: none;
+   overflow: auto;
+   background-color: #f4f4f4aa;
+   border-radius: 15px;
+}
+
+.descargar {
+   text-align: center;
+   margin: 30px 0 20px 0;
+}
+
+.btn-reporte {
+   padding: 10px auto;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+.regresar {
+   display: flex;
+   justify-content: center;
+   margin: 30px auto 60px auto;
+}
+
+/* FINANCIERO*/
+
+.hero-reporte.financiero {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.718) 100%, transparent 60%), url("Img SIE/report\ 2.jpg");
+   background-position: 50% 35%;
+}
+
+
+/* COMERCIAL
+
+.hero-reporte.comercial {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.718) 100%, transparent 60%), url("Img SIE/);
+
+PAGO AL AUTOR 
+
+.hero-reporte.pago-autor {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.718) 100%, transparent 60%), url("Img SIE/);
+}
+   }*/
+
+/* PAGINA INCIAL DE REGISTRO*/
+
+.visualizar-reporte.registro #btn-manual {
+   color: #6184c6;
+   border: 2px solid #6184c6;
+}
+
+.visualizar-reporte.registro #btn-manual:hover {
+   background-color: #6184c6;
+   border: none;
+   color: #ffffff;
+   cursor: pointer;
+}
+
+.seleccion-reportes.registro {
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.595) 100%, transparent 60%), url("Img SIE/letras\ de\ imprenta.jpg");
+   background-position: bottom;
+}
+
+/* REGISTROS INDIVIDUALES*/

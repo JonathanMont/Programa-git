@@ -1,0 +1,116 @@
+@ -0,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ asset("web-assests/style.css") }}" />
+    <title>En progreso - SIE</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.blade.php">
+            <img
+              
+              src="{{ asset("web-assests/Img SIE/logo ediciones uniandes.png") }}"
+              alt="Logo de Ediciones Uniandes"
+            />
+          </a>
+        </div>
+        <ul>
+          <li><a href="registro-inicio.blade.php">Registrar libro</a></li>
+          <li><a href="reporte-inicio.blade.php">Reportes</a></li>
+        </ul>
+        <div>
+          <a href="login.blade.php">
+            <input type="button" value="Iniciar sesión" id="btn-login" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="construyendo">
+        <h1>Esta pagina esta en construccion...</h1>
+        <h2>
+          ¡Regresa pronto para disfrutar de todas las funcionalidades que SIE
+          puede ofrecerte!
+        </h2>
+        <img src="{{ asset("web-assests/Img SIE/under_construction website.svg") }}" alt="En construccion" />
+      </section>
+    </main>
+
+    <footer>
+      <section class="generalidades">
+        <div class="contacto">
+          <img
+            src="{{ asset("web-assests/Img SIE/logo ediciones uniandes gris.png") }}"
+            alt="logo de ediciones uniandes"
+          />
+
+          <h3>Contáctanos:</h3>
+
+          <p>Carrera 1a no 18A-12, bloque Tm</p>
+          <p>(+57) 601 339-4949, ext. 2274</p>
+
+          <p>Bogotá, Colombia</p>
+          <p>ediciones@uniandes.edu.co</p>
+        </div>
+
+        <div class="enlaces-de-interes">
+          <h3>Enlaces de interés</h3>
+          <ul>
+            <li class="links-footer">Revista Contraportada</li>
+            <li class="links-footer">Biblioteca Uniandes</li>
+            <li class="links-footer">Tienda Uniandes</li>
+            <li class="links-footer">
+              Vicerrectoria de Investigación y Creación /li>
+            </li>
+            <li class="links-footer">Acceso abierto</li>
+            <li class="links-footer">Nuestros EPUB</li>
+          </ul>
+        </div>
+        <div class="redes-sociales">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li class="links-footer-redes">@ediciones.uniandes</li>
+            <li class="links-footer-redes">/EdicionesUniandes</li>
+            <li class="links-footer-redes">@ediciones.uniandes</li>
+            <li class="links-footer-redes">@ed_uniandes</li>
+          </ul>
+        </div>
+      </section>
+      <section class="logos-footer">
+        <div class="miembros">
+          <p class="somos-miembros">Somos miembros de:</p>
+          <a href="#" class="somos-miembros">
+            <img src="{{ asset("web-assests/Img SIE/logo aseuc.svg") }}" alt="Logo ASEUC" />
+          </a>
+          <a href="#" class="somos-miembros">
+            <img src="{{ asset("web-assests/img SIE/logo eulac.svg") }}" alt="Logo EULAC" />
+          </a>
+        </div>
+      </section>
+      <section class="copyright">
+        <div class="derechos-reservados">
+          <p>
+            Universidad de los Andes | Vigilada Mineducación | Reconocimiento
+            como Universidad: Decreto 1297 del 30 de mayo de
+            1964.|Reconocimiento personería jurídica: Resolución 28 del 23 de
+            febrero de 1949 Minjusticia.
+          </p>
+          <p>© - Derechos Reservados Universidad de los Andes</p>
+        </div>
+      </section>
+    </footer>
+        <script src="{{ asset("web-assests/script.js") }}"></script>
+  </body>
+</html>
